@@ -1,0 +1,2 @@
+-- The statement uses DDL. ALTER TABLE is used to modify the definition of the table.
+-- It doesn't manipulate the data stored in it.

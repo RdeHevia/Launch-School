@@ -1,0 +1,12 @@
+{
+  "name": "modules_t_d_files",
+  "version": "1.0.0",
+  "description": "",
+  "main": "say-hello.js",
+  "types": "say-hello.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

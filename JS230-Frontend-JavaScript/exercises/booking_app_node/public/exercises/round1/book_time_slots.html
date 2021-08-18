@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>your page title goes here</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="styles.css"/>
+  <!-- <script src="book_time_slots.js"></script> -->
+  <script src="book_time_slots_promises.js"></script>
+</head>
+<body>
+  <main>
+    <form action="/api/bookings" method="post" id="booking_form">
+      <article class='header'>
+        <h1>Schedules</h1>
+      </article>
+      <fieldset class='input_fields'>
+        <dl>
+          <dt><label for="schedule">Select one schedule</label></dt>
+          <dd><select name="id" id="schedule"></select></dd>
+        </dl>
+        <dl>
+          <dt><label for="student_email">Email</label></dt>
+          <dd><input type="email" name="student_email" id="student_email"/></dd>
+        </dl>
+      </fieldset>
+      <article class='submit'>
+        <button type="submit">Submit</button>
+      </article>
+    </form>
+    <!-- <form id="new_student" action="/api/students" method="post">
+      <article class="header">
+        <h1>Please provide new student details</h1>
+      </article>
+      <fieldset class="input_fields student">
+        <dl>
+          <dt><label for="email">Email</label></dt>
+          <dd><input type="email" name="email" id="email"/></dd>
+        </dl>
+        <dl>
+          <dt><label for="name">Name</label></dt>
+          <dd><input type="text" name="name" id="name"/></dd>
+        </dl>
+        <dl>
+          <dt><label for="booking_sequence">Booking sequence</label></dt>
+          <dd><input type="number" name="booking_sequence" id="booking_sequence"/></dd>
+        </dl>
+      </fieldset>
+      <article class='submit student'>
+        <button type="submit">Submit</button>
+      </article>
+    </form> -->
+  </main>
+</body>
+</html>

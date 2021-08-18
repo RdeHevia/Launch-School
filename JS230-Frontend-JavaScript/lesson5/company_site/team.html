@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Space Design | Team</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <link rel="stylesheet" href="site.css" />
+    <link rel="stylesheet" href="modal.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script id="modal_template" type="text/x-handlebars">
+      <section id="modal">
+        <a href="#" class="close_window">
+          <img src="./images/icon_close.png" alt="close_window" class="close_window"/>
+        </a>
+        <figure>
+          <img src="{{imgPath}}"" alt=""/>
+          <figcaption>{{memberName}}</figcaption>
+        </figure>
+        <p>
+          {{bio}}
+        </p>
+      </section>
+    </script>
+    <script src="modal.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="home.html">SpaceDesign</a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="team.html" class="active">Team</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="team" class="column">
+        <article>
+          <h2>Team</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniadolor</p>
+          <ul>
+            <li>
+              <a href="#" data-member-bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. ">
+                <img src="images/img_kevin.jpg" alt="Kevin Wang" />
+                Kevin
+              </a>
+            </li>
+            <li>
+              <a href="#" data-member-bio="Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. ">
+                <img src="images/img_louis.jpg" alt="Louis Burton" />
+                Louis
+              </a>
+            </li>
+            <li>
+              <a href="#" data-member-bio="Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. ">
+                <img src="images/img_kasper.jpg" alt="Kasper Salto" />
+                Kasper
+              </a>
+            </li>
+            <li>
+              <a href="#" data-member-bio="Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. ">
+                <img src="images/img_chris.jpg" alt="Chris Lee" />
+                Chris
+              </a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Lorem ipsum dolor sit amet, consectetu
+        <br />
+        incididunt ut labore et dolore magna aliqua. Ut enim ad
+      </p>
+      <ul>
+        <li><a href="#" class="twitter">Twitter</a></li>
+        <li><a href="#" class="facebook">Facebook</a></li>
+        <li><a href="#" class="email">Email</a></li>
+        <li><a href="#" class="instagram">Instagram</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

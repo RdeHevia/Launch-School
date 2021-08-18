@@ -1,0 +1,16 @@
+{
+  "name": "roman-numbers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest",
+    "coverage": "cd test && ls && jest --coverage && open coverage/lcov-report/index.html"
+  },
+  "author": "Raul de Hevia",
+  "license": "ISC"
+}

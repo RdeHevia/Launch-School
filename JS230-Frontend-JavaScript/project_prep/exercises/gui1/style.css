@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font: 16px "Helvetica Neue", Helvetica, Arial;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+figure {
+  width: 400px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+figcaption {
+  display: block;
+  position: relative;
+  bottom: 100px;
+  left: 100px;
+  font-size: 2rem;
+  background-color: grey;
+  color:indianred;
+  opacity: 0.8;
+  transition: opacity 0.5s ease-out;
+}
+
+.hide {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}

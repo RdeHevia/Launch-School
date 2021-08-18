@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>your page title goes here</title>
+  <meta charset="utf-8" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.js" integrity="sha512-c7SfJeKRl8g7wgL+zMGX78faYVGp+NZVQ587mRLrqeLySX/qHCQOKw/iZ5Pp64DaPjvedixWC/Fe73upnhBaRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./templateManager.js"></script>
+</head>
+<body>
+</body>
+
+<script id="posts" type="text/x-handlebars">
+  {{#each posts}}
+    <article>
+      <h1>{{title}}</h1>
+      <p><time>Posted on {{published}}</time></p>
+      {{{body}}}
+    </article>
+    <footer>
+      <h2>Tags:</h2>
+      <ul>
+        {{#if tags}}
+          {{#each tags}}
+            {{>tag}}
+          {{/each}}
+        {{else}}
+          <p>Not tagged message</p>
+        {{/if}}
+      </ul>
+    </footer>
+  {{/each}}
+</script>
+
+
+<script id="tag" type="text/x-handlebars">
+  <li>{{this}}</li>
+</script>
+</html>

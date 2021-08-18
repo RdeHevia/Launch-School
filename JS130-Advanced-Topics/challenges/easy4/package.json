@@ -1,0 +1,17 @@
+{
+  "name": "easy4_anagrams",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest",
+    "coverage": "cd test && jest --coverage", 
+    "openCoverage": "open ./test/coverage/lcov-report/index.html"
+  },
+  "author": "Raul de Hevia",
+  "license": "ISC"
+}

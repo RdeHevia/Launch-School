@@ -1,0 +1,15 @@
+{
+  "name": "easy5_scrabble",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Raul de Hevia",
+  "license": "ISC"
+}

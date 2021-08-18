@@ -1,0 +1,3 @@
+-- We use INSERT INTO to add a row of data to a column. 
+-- This statement doesn't affect to the structure or the definition of the data but manipulates it. 
+-- Thus, it's a DML statement.

@@ -1,0 +1,21 @@
+{
+  "name": "hello-world2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hello.js",
+  "scripts": {
+    "test": "jest",
+    "start": "npx nodemon hello.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

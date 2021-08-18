@@ -1,0 +1,38 @@
+<!-- 
+  STRUCTURE:
+  main
+    form
+      p (result)
+      fieldset flex
+        - input(number)
+        - select
+        - input(number)
+        - submit (=)
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>your page title goes here</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css"/>
+  <script src="calculator.js"></script>
+</head>
+<body>
+  <form action="#" method="post">
+    <p data-result="0">0</p>
+    <fieldset>
+      <input type="number" name="number" id="number1" value="0"/>
+      <select name="operator" id="operator">
+        <option>+</option>
+        <option>-</option>
+        <option>x</option>
+        <option>/</option>
+      </select>
+      <input type="number" name="number" id="number2" value="0"/>
+      <button type="submit">=</button>
+    </fieldset>
+  </form>
+</body>
+</html>

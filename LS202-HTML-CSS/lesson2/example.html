@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>your page title goes here</title>
+  <meta charset="utf-8" />
+  <style>
+    #auto-width {
+  background-color: cyan;
+  border: 1px solid gray;
+  font-family: monospace;
+  text-align: center;
+  width: 730px;
+}
+
+#auto-width div {
+  background-color: #ffe0e0;
+  border: 5px solid red;
+  margin: 2%;
+  padding: 40px;
+  text-align: left;
+}
+
+#auto-width-auto {
+  width: auto;
+}
+
+#auto-width-100-border {
+  box-sizing: border-box;
+  width: 96%;
+}
+
+#auto-width-100-content {
+  box-sizing: content-box;
+  width: 96%;
+}
+  </style>
+</head>
+<body>
+  <div id="auto-width">
+    <div id="auto-width-auto">width: auto</div>
+    <div id="auto-width-100-border">width: 100%; box-sizing: border-box;</div>
+    <div id="auto-width-100-content">width: 100%; box-sizing: content-box;</div>
+  </div>
+</body>
+</html>

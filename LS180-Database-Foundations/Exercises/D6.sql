@@ -1,0 +1,4 @@
+-- We use the statement UPDATE to change the value of the entries of 
+-- a given column (materials) of a given table (things) that meet an specific
+-- condition (item = 'Cup'). This statement manipulates the data, thus is a DML
+-- statement.

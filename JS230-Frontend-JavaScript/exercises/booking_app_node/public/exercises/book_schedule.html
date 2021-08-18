@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>your page title goes here</title>
+  <meta charset="utf-8" />
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+  <script src="./book_schedule.js"></script>
+</head>
+<body>
+  <form id='book_schedule' action="/api/bookings" method="post">
+    <h1>Schedules</h1>
+    <fieldset>
+      <dl>
+        <dt><label for="schedules">Please select one schedule</label></dt>
+        <dd><select name="schedules" id="schedules"></select></dd>
+      </dl>
+      <dl>
+        <dt><label for="student_email">Email:</label></dt>
+        <dd><input type="email" name="student_email" id="student_email"/></dd>
+      </dl>
+    </fieldset>
+    <button type="submit">Submit</button>
+  </form>
+  <form action="/api/students" method="post" class="hidden" id="register_new_student">
+    <h1>Please provide new student details</h1>
+    <fieldset>
+      <dl>
+        <dt><label for="email">Email:</label></dt>
+        <dd><input type="email" name="email" id="email"/></dd>
+      </dl>
+      <dl>
+        <dt><label for="name">Name:</label></dt>
+        <dd><input type="text" name="name" id="name"/></dd>
+      </dl>
+      <dl>
+        <dt><label for="booking_sequence">Booking Sequence</label></dt>
+        <dd>
+          <input type="text" name="booking_sequence" 
+                   id="booking_sequence"/>
+        </dd>
+      </dl>
+    </fieldset>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

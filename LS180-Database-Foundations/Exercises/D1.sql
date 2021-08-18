@@ -1,0 +1,4 @@
+-- Data Manipulation Languange
+-- SELECT, INSERT, UPDATE, DELETE
+-- Data Definition Language
+-- e.g. CREATE, ALTER, DROP

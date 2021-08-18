@@ -1,0 +1,14 @@
+{
+  "name": "robot-name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jest.config.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Raul de Hevia",
+  "license": "ISC",
+  "dependencies": {
+    "seedrandom": "^3.0.5"
+  }
+}

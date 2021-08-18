@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Form</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="contact_form_style.css"/>
+</head>
+<body>
+  <form action="#" method="post">
+    <fieldset id="personal_info">
+      <dl class="first_name">
+        <dt><label for="first_name">First Name</label></dt>
+        <dd><input type="text" name="first_name" id="first_name"/></dd>
+      </dl><!--
+      --><dl class="last_name">
+        <dt><label for="last_name">Last Name</label></dt>
+        <dd><input type="text" name="last_name" id="last_name"/></dd>
+      </dl>
+
+      <dl>
+        <dt><label for="email">Email</label></dt>
+        <dd><input type="email" name="email" id="email"
+                   placeholder="address@domain.com"/></dd>
+      </dl>
+  
+      <dl class="city">
+        <dt><label for="city">City</label></dt>
+        <dd><input type="text" name="city" id="city"/></dd>
+      </dl><!--
+      --><dl class="state">
+        <dt><label for="state">State</label></dt>
+        <dd>
+          <select name="state" id="state">
+            <option>AK</option>
+            <option>AL</option>
+            <option>AR</option>
+            <option>AZ</option>
+            <option>CA</option>
+            <option>CO</option>
+            <option>CT</option>
+            <option>DC</option>
+            <option>DE</option>
+            <option>FL</option>
+            <option>GA</option>
+            <option>HI</option>
+            <option>IA</option>
+            <option>ID</option>
+            <option>IL</option>
+            <option>IN</option>
+            <option>KS</option>
+            <option>KY</option>
+            <option>LA</option>
+            <option>MA</option>
+            <option>MD</option>
+            <option>ME</option>
+            <option>MI</option>
+            <option>MN</option>
+            <option>MO</option>
+            <option>MS</option>
+            <option>MT</option>
+            <option>NC</option>
+            <option>ND</option>
+            <option>NE</option>
+            <option>NH</option>
+            <option>NJ</option>
+            <option>NM</option>
+            <option>NV</option>
+            <option>NY</option>
+            <option>OH</option>
+            <option>OK</option>
+            <option>OR</option>
+            <option>PA</option>
+            <option>RI</option>
+            <option>SC</option>
+            <option>SD</option>
+            <option>TN</option>
+            <option>TX</option>
+            <option>UT</option>
+            <option>VA</option>
+            <option>VT</option>
+            <option>WA</option>
+            <option>WI</option>
+            <option>WV</option>
+            <option>WY</option>
+          </select>
+        </dd>
+      </dl><!--
+      --><dl class="zip_code">
+        <dt><label for="zip_code">Zip Code</label></dt>
+        <dd><input type="number" name="zip_code" id="zip_code"
+                   placeholder="#####" pattern="[0-9]{5}"/></dd>
+      </dl>
+  </fieldset>
+
+  <fieldset id="questions">
+    <p>Which of these colors do you like best?<p>
+    <ul>
+      <li>
+        <label><input type="radio" name="color" value="red"/>Red</label>
+      </li>
+      <li>
+        <label><input type="radio" name="color" value="blue"/>Blue</label>
+      </li>
+      <li>
+        <label><input type="radio" name="color" value="green"/>Green</label>
+      </li>
+      <li>
+        <label><input type="radio" name="color" value="yellow"/>Yellow</label>
+      </li>
+      <li>
+        <label><input type="radio" name="color" value="pink"/>Pink</label>
+      </li>
+    </ul>
+
+    <p>Which web technologies do you want to learn?<p>
+    <ul>
+      <li><label><input type="checkbox" name="html"/>HTML</label></li>
+      <li><label><input type="checkbox" name="css"/>CSS</label></li>
+      <li><label><input type="checkbox" name="js"/>JavaScript</label></li>
+      <li><label><input type="checkbox" name="ruby"/>Ruby</label></li>
+      <li><label><input type="checkbox" name="rails"/>Rails</label></li>
+    </ul>
+
+    <dl>
+      <dt><label for="reflections">What's on your mind?</label></dt>
+      <dd>
+        <textarea name="reflections" id="reflections" cols="80" rows="6"></textarea>
+      </dd>
+    </dl>
+  </fieldset>
+
+  <input type="hidden" name="time_stamp" value="2018-02-17" />
+
+  <fieldset id="control buttons">
+    <button>Submit</button>
+    <input type="reset" value="Reset"/>
+  </fieldset>
+  </form>
+</body>
+</html>

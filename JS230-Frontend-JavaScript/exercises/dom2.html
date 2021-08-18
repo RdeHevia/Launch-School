@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>your page title goes here</title>
+  <meta charset="utf-8" />
+</head>
+<body>
+  <div id="1">
+    <h1 id="2">Hello, <em id="3">World</em></h1>
+    <p id="4">
+      Welcome to wonderland. This is an
+      <span id="5">awesome</span> place.
+    </p>
+    <a href="#" id="6"><strong id="7">Enter</strong></a>
+    <div id="8"><p id="9"><a href="#" id="10">Go back</a></p></div>
+  </div>
+</body>
+<script src="dom2.js"></script>
+</html>
+
+<!-- 
+  1) direct: #t, 2, #t, 4, #t, 6, #t, 8, #t -> total 9
+  2) direct: #T, 3 -> total 2
+  3) direct: #T -> total 1
+  4) direct: #T, 5, #T -> total 3
+  5) direct: #T -> total 1
+  6) direct: 7 -> total 1
+  7) direct: #T -> total 1
+  8) direct: 9 -> total 1
+  9) direct: 10 -> total 1
+  10) direct: #T -> total 1
+ -->

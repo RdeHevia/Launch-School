@@ -1,0 +1,27 @@
+{
+  "name": "ls215",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RdeHevia/LS215.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RdeHevia/LS215/issues"
+  },
+  "homepage": "https://github.com/RdeHevia/LS215#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.25.0",
+    "eslint-cli": "^1.1.1"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}

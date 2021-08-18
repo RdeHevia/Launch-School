@@ -1,0 +1,24 @@
+{
+  "name": "js175",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RdeHevia/JS175.git"
+  },
+  "author": "RdH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RdeHevia/JS175/issues"
+  },
+  "homepage": "https://github.com/RdeHevia/JS175#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.21.0",
+    "eslint-cli": "^1.1.1"
+  }
+}

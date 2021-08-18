@@ -1,0 +1,16 @@
+{
+  "name": "point_mutations",
+  "version": "1.0.0",
+  "description": "JS130 challenge easy2",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest",
+    "coverage": "cd test && ls && jest --coverage && open coverage/lcov-report/index.html"
+  },
+  "author": "Raul de Hevia",
+  "license": "ISC"
+}

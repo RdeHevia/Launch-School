@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>your page title goes here</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="add_schedules.js"></script>
+</head>
+<body>
+  <main>
+    <article class="add_schedule_form">
+      <button type="submit">Add more schedules</button>
+    </article>
+
+    <article id="forms">
+      <form class="schedule1" action="/api/schedules" method="post">
+        <article class="header">
+          <h1>Schedule 1</h1>
+        </article>
+        <article class="input_fields">
+          <dl>
+            <dt><label for="name1">Staff Name:</label></dt>
+            <dd>
+              <select class="schedule1" name="staff_id" id="name1">
+                <option value=""></option>
+              </select>
+            </dd>
+          </dl>
+          <dl>
+            <dt><label for="date1">Date:</label></dt>
+            <dd>
+              <input autocomplete="off" class="schedule1" list="available_dates1" type="text" name="date" id="date1"/>
+              <datalist class="schedule1" id="available_dates1"></datalist>
+            </dd>
+          </dl>
+          <dl>
+            <dt><label class="schedule1" for="time1">Time:</label></dt>
+            <dd>
+              <input autocomplete="off" class="schedule1" list="available_hours1" type="text" name="time" id="time1"/>
+              <datalist  class="schedule1" id="available_hours1"></datalist>
+            </dd>
+          </dl>
+        </article>
+      </form>
+    </article>
+  
+    <article class="submit">
+      <button type="submit">Submit</button>
+    </article>
+  </main>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>your page title goes here</title>
+  <meta charset="utf-8" />
+  <style>
+    img {
+      display: block;
+      width: 15%;
+      margin-top: 10px;
+      cursor: auto;
+    }
+  </style>
+
+</head>
+<body>
+  <a href="https://www.launchschool.com">
+    Home
+    <img src="https://d24f1whwu8r3u4.cloudfront.net/assets/launch-logo-b6d01bd15ee9da31457ee3c315845718823aa8a741858be598ab35042a312348.svg" />
+  </a>
+  <script>
+    document.querySelector('img').addEventListener('click', event => {
+      // event.stopPropagation();
+      // console.log(event.target);
+      event.preventDefault();
+    }, false);
+  </script>
+</body>
+</html>
+
+<!-- when stopPropagation is called on an event, it stops the event for
+further propagate in the capturing and bubbling phases. It doesn't prevent
+any default behavior, which is to follow the link of its parent anchor element.
+event.preventDefault() should be used instead-->

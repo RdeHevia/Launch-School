@@ -1,0 +1,45 @@
+<!-- 
+  Main
+    form
+      h2
+      item name
+      quantity
+      button
+    section
+      h1 groceries
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>your page title goes here</title>
+  <link rel="stylesheet" href="../normalize.css"/>
+  <link rel="stylesheet" href="grocery_list.css"/>
+  <script src="grocery_list.js"></script>
+  <meta charset="utf-8" />
+</head>
+<body>
+  <main>
+    <form action="#" method="post">
+      <h1>Add an item</h1>
+      <fieldset>
+        <dl>
+          <dt><label for="name">Item name</label></dt>
+          <dd><input type="text" name="name" id="name"/></dd>
+        </dl>
+        <dl>
+          <dt><label for="quantity">Quantity</label></dt>
+          <dd><input type="number" name="quantity" id="quantity"/></dd>
+        </dl>
+      </fieldset>
+      <fieldset id="button_container">
+        <button type="submit">Add</button>
+      </fieldset>
+    </form>
+    <section>
+      <h1>Groceries</h1>
+      <ul id="list_container"></ul>
+    </section>
+  </main>
+</body>
+</html>

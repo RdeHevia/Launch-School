@@ -1,0 +1,108 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font: 16px 'Quicksand', sans-serif;
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+  font-size: 2rem;
+ }
+
+main {
+  box-sizing: border-box;
+  display: grid;
+  width: 90vh;
+  min-width: 800px;
+  height: 90vh;
+  margin: 30px auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.33fr 1fr 1fr;
+  gap: 30px;
+  grid-template-areas:
+  "header header"
+  "month-year-display expenses"
+  "total categories"
+}
+
+.tile {
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* aspect-ratio: 1 / 1; */
+}
+
+#header {
+  grid-area: header;
+  background-color: #8CFAD9;
+  flex-direction: row;
+  justify-content:space-around;
+  
+}
+
+#month-year-display {
+  grid-area: month-year-display;
+  background-color: #E6FABF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#expenses {
+  grid-area: expenses;
+  background-color: #8CBBFA;
+}
+
+#total {
+  grid-area: total;
+  list-style-type: none;
+  background-color: #FAB7A5;
+  font-size: 2rem;
+}
+
+#categories {
+  grid-area: categories;
+  background-color: #FAD58E;
+  align-items: unset;
+}
+
+#categories h2 {
+  display: flex;
+  justify-content: center;
+}
+
+#categories dl {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+#all-expenses {
+  display: none;
+}
+
+#expenses h2, #categories h2 {
+  margin-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th {
+  font-size: 1.15rem;
+
+}
+
+th, td {
+  padding: 5px;
+}

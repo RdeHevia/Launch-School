@@ -1,0 +1,6 @@
+SELECT * FROM people
+WHERE id = 3399;
+
+
+DELETE FROM people
+WHERE id = 3399;

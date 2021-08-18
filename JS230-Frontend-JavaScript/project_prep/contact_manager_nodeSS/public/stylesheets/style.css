@@ -1,0 +1,172 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font: 16px "Helvetica Neue", Helvetica, Arial;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li, dd {
+  padding-right: 0;
+  margin-right: 0;
+  margin-inline-start: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+input {
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #6f5499;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: clamp(600px, 80%, 1200px);
+  /* border: 2px solid black; */
+}
+
+#actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 2px solid black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border: 2px solid black;
+}
+
+fieldset {
+  /* display: flex;
+  flex-direction: column; */
+  width: clamp(600px, 60%, 800px);
+  /* align-items: center; */
+}
+
+fieldset dl {
+  display: flex;
+  justify-content:space-between;
+
+}
+
+fieldset dt {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  flex: 1 1 auto;
+  padding-right: 15px;
+}
+
+fieldset dd {
+  width: 70%;
+}
+
+.form_buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form_buttons div:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+button {
+  padding: 20px 50px;
+}
+
+ #actions .tags {
+  width: 300px;
+}
+
+.tags ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.tags label {
+  /* flex: 0 1 auto; */
+  margin: 5px 5px;
+}
+
+#c_contacts {
+  display: flex;
+  width: 100%;
+  border: 2px solid black;
+  flex-wrap: wrap;
+}
+
+.contact {
+  flex: 0 1 200px;
+}
+
+.contact_buttons {
+  display: flex;
+  justify-content: start;
+  padding-left: 0;
+}
+
+.contact_buttons li {
+  display: flex;
+  justify-content: center;
+  flex: 0 1 70px;
+  margin-right: 5px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.add_contact {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.hidden {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  flex: 0 0 0;
+  overflow: hidden;
+  /* width: 100px;
+  height: 100px;
+  transition: 1s; */
+}
+
+/* .hidden:hover {
+  opacity: 1;
+  width: 300px;
+  height:300px;
+} */

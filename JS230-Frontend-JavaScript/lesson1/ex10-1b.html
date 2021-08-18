@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>On the River</title>
+    <script>
+      function walkElementTree (element, callback) {
+        callback(element);
+
+        [...element.children].forEach(child => walkElementTree(child, callback));
+      }
+
+      function selectAllByTag(tag) {
+        let elements = [];
+
+        walkElementTree(document, element => {
+          if (element.tagName === tag.toUpperCase()) elements.push(element);
+        });
+
+        return elements;
+      }
+    </script>
+  </head>
+  <body>
+    <!--  -->
+    <h1>On The River</h1>
+    <p>The sun is low</p>
+    <p>The waters flow</p>
+  </body>
+</html>

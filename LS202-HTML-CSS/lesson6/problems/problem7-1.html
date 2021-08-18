@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>your page title goes here</title>
+  <meta charset="utf-8" />
+  <style>
+    #positioned {
+      box-sizing: border-box;
+      background-color: rgb(235, 236, 162);
+      position: fixed;
+      width: 400px;
+      padding: 30px 15px;
+      left: 50%;
+      top: 40px;
+      margin-left: -200px;
+      z-index: 2;
+    }
+
+    #fixed {
+      background-color: rgba(0,0,0, .6);
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+
+    #pinkSquare {
+      background-color: pink;
+      height: 20px;
+      width: 20px;
+      position: absolute;
+      left: -10px;
+      top: -10px;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat, risus interdum viverra faucibus, tortor eros tincidunt ante, quis mattis ipsum erat in justo. In hac habitasse platea dictumst. Nam cursus dui et nunc pellentesque condimentum. Ut pulvinar eleifend malesuada. In luctus dolor a efficitur maximus. Vestibulum mattis eu odio in auctor. Vestibulum sed velit ex. Donec leo nisl, tristique ut urna id, facilisis condimentum diam. Proin pulvinar nulla lacus, eu ullamcorper massa sollicitudin sed. Phasellus commodo at lorem ut pulvinar. Nam scelerisque auctor risus, eget pulvinar justo gravida sit amet. Praesent ut lorem eget mauris fringilla tincidunt sit amet vitae metus. Maecenas scelerisque nulla quis finibus convallis. Proin nec felis id metus convallis rutrum. Sed sed luctus lorem, eget sagittis lorem. Phasellus posuere bibendum dignissim.
+    </p>
+    <p>
+      Vivamus eu libero porttitor, pulvinar nibh a, eleifend nibh. Nam consectetur lectus quis leo pretium, eu sagittis ipsum vestibulum. Nullam ipsum est, ultrices non finibus nec, consequat vel erat. Suspendisse sed diam eget nulla volutpat porta quis id nunc. In scelerisque, neque sed porta ullamcorper, tellus felis fringilla neque, vitae porta elit dui sed sapien. Integer ullamcorper neque ut vehicula placerat. Nam id dignissim dolor.
+    </p>
+    <p>
+      Aenean sit amet vehicula urna. Curabitur eu nunc in dui blandit aliquet. In hac habitasse platea dictumst. Duis laoreet aliquam convallis. Sed pellentesque elementum hendrerit. Cras at mauris lorem. Sed rutrum malesuada dolor quis tristique.
+    </p>
+    <p>
+      Cras nisi erat, fermentum vehicula ultrices in, volutpat vel elit. Proin dolor odio, volutpat id neque non, convallis fermentum justo. Cras iaculis dapibus rutrum. Nunc purus lacus, sagittis ut aliquet id, ullamcorper a nulla. Ut vestibulum laoreet placerat. Sed consequat, libero vel euismod dictum, lorem ligula euismod orci, non tincidunt mauris lacus ut urna. Maecenas id purus semper diam ornare tempor. Nam vulputate dui tellus, non dignissim leo blandit nec. Nulla egestas, ligula vel lobortis pulvinar, leo lacus luctus enim, in consectetur ante metus in elit. Duis eleifend neque nec justo tincidunt sagittis. Aliquam libero nisi, congue at massa eu, vestibulum congue dolor. In interdum, diam id porta venenatis, est velit efficitur lorem, eu eleifend purus est ut eros. Aliquam tempus justo massa, non ultrices tellus semper quis. Maecenas at gravida massa, non scelerisque elit.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat, risus interdum viverra faucibus, tortor eros tincidunt ante, quis mattis ipsum erat in justo. In hac habitasse platea dictumst. Nam cursus dui et nunc pellentesque condimentum. Ut pulvinar eleifend malesuada. In luctus dolor a efficitur maximus. Vestibulum mattis eu odio in auctor. Vestibulum sed velit ex. Donec leo nisl, tristique ut urna id, facilisis condimentum diam. Proin pulvinar nulla lacus, eu ullamcorper massa sollicitudin sed. Phasellus commodo at lorem ut pulvinar. Nam scelerisque auctor risus, eget pulvinar justo gravida sit amet. Praesent ut lorem eget mauris fringilla tincidunt sit amet vitae metus. Maecenas scelerisque nulla quis finibus convallis. Proin nec felis id metus convallis rutrum. Sed sed luctus lorem, eget sagittis lorem. Phasellus posuere bibendum dignissim.
+    </p>
+    <p>
+      Vivamus eu libero porttitor, pulvinar nibh a, eleifend nibh. Nam consectetur lectus quis leo pretium, eu sagittis ipsum vestibulum. Nullam ipsum est, ultrices non finibus nec, consequat vel erat. Suspendisse sed diam eget nulla volutpat porta quis id nunc. In scelerisque, neque sed porta ullamcorper, tellus felis fringilla neque, vitae porta elit dui sed sapien. Integer ullamcorper neque ut vehicula placerat. Nam id dignissim dolor.
+    </p>
+    <p>
+      Aenean sit amet vehicula urna. Curabitur eu nunc in dui blandit aliquet. In hac habitasse platea dictumst. Duis laoreet aliquam convallis. Sed pellentesque elementum hendrerit. Cras at mauris lorem. Sed rutrum malesuada dolor quis tristique.
+    </p>
+    <p>
+      Cras nisi erat, fermentum vehicula ultrices in, volutpat vel elit. Proin dolor odio, volutpat id neque non, convallis fermentum justo. Cras iaculis dapibus rutrum. Nunc purus lacus, sagittis ut aliquet id, ullamcorper a nulla. Ut vestibulum laoreet placerat. Sed consequat, libero vel euismod dictum, lorem ligula euismod orci, non tincidunt mauris lacus ut urna. Maecenas id purus semper diam ornare tempor. Nam vulputate dui tellus, non dignissim leo blandit nec. Nulla egestas, ligula vel lobortis pulvinar, leo lacus luctus enim, in consectetur ante metus in elit. Duis eleifend neque nec justo tincidunt sagittis. Aliquam libero nisi, congue at massa eu, vestibulum congue dolor. In interdum, diam id porta venenatis, est velit efficitur lorem, eu eleifend purus est ut eros. Aliquam tempus justo massa, non ultrices tellus semper quis. Maecenas at gravida massa, non scelerisque elit.
+    </p>
+  </section>
+  <div id="positioned">
+    <p>I'm positioned!</p>
+    <div id="pinkSquare"></div>
+  </div>
+  <div id="fixed"></div>
+</body>
+</html>
